@@ -48,6 +48,9 @@ f(3) = 1+min(f[3-1],f[3-2])
 -~~~~~~~~
 
  */
+ #include<vector>
+ #include<iostream>
+using namespace std;
 int coinChange(vector<int>& coins, int amount) 
     {
        if (amount == 0)
@@ -66,7 +69,11 @@ int coinChange(vector<int>& coins, int amount)
         }  
         return dp[amount]>amount?-1:dp[amount];
     }
-
+int main()
+{
+   
+   return 0;
+}
 
 
 
